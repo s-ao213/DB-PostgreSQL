@@ -2,11 +2,10 @@ SELECT
     id,
     name,
     level,
-    buff
+    created_on
 FROM
     s_characters
 WHERE
-    buff >= 0.00
+    name LIKE 'T%'
 ORDER BY
-    buff DESC,
-    level DESC;
+    name;
